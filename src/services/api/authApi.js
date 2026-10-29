@@ -3,7 +3,7 @@ const API_BASE_URL = (
 ).replace(/\/+$/, "");
 
 const LOGIN_ENDPOINT =
-  import.meta.env.VITE_API_LOGIN_ENDPOINT || "/auth/Login";
+  import.meta.env.VITE_API_LOGIN_ENDPOINT || "/auth/login";
 
 export async function loginRequest(credentials) {
   if (!API_BASE_URL) {

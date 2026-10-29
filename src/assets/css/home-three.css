@@ -1,0 +1,1084 @@
+/*-------------- HOME PAGE THREE CSS START --------------*/
+/* Header CSS Start */
+.header-style-two {
+  background: transparent;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+/* Header CSS End */
+/* Navbar CSS End*/
+.nav-style-two {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.nav-style-two .main-nav {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.nav-style-two .other-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-style-two .other-option .search-option {
+  position: relative;
+  left: -15px;
+  top: 0;
+}
+
+.nav-style-two .other-option .search-option button {
+  border: 0;
+  background: #ffffff;
+  color: #2196f3;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15) !important;
+          box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15) !important;
+  cursor: pointer;
+}
+
+.nav-style-two .other-option .search-option .search-input {
+  display: none;
+}
+
+.nav-style-two .other-option .search-option .search-input .form-control {
+  position: absolute;
+  top: 90px;
+  width: 300px;
+  height: 50px;
+  right: 0;
+  background: #ffffff;
+  border: 3px solid #dddddd;
+  color: #111111;
+  -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+          box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+}
+
+.nav-style-two .other-option .search-option .search-input a {
+  position: absolute;
+  top: 103px;
+  right: 15px;
+}
+
+.nav-style-two .other-option .search-option .search-input a i {
+  font-size: 20px;
+}
+
+.nav-style-two .other-option .search-option .search-input input:focus, .nav-style-two .other-option .search-option .search-input input:hover {
+  -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15) !important;
+          box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15) !important;
+}
+
+.nav-style-two .other-option .sidebar-toggle button {
+  border: 0;
+  background: #ffffff;
+  color: #2196f3;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15) !important;
+          box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15) !important;
+  cursor: pointer;
+  top: 1px;
+  position: relative;
+}
+
+/* Navbar CSS End*/
+/* Modal CSS Start */
+.modal.fade:not(.in).left .modal-dialog {
+  -webkit-transform: translate3d(-25%, 0, 0);
+          transform: translate3d(-25%, 0, 0);
+}
+
+.modal.fade:not(.in).right .modal-dialog {
+  -webkit-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
+}
+
+.modal.fade:not(.in).bottom .modal-dialog {
+  -webkit-transform: translate3d(0, 25%, 0);
+          transform: translate3d(0, 25%, 0);
+}
+
+.modal.right .modal-dialog {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+}
+
+.right-modal .modal {
+  z-index: 9999999;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.right-modal .modal .modal-header img {
+  width: 140px;
+  padding-top: 8px;
+}
+
+.right-modal .modal .modal-header button {
+  border: none;
+  font-size: 30px;
+  background-color: transparent;
+}
+
+.right-modal .modal .modal-header button span {
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 40px;
+  line-height: 50px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+          box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+}
+
+.right-modal .modal .modal-header button span:hover {
+  border-radius: 0px;
+}
+
+.right-modal .modal .modal-body {
+  width: 500px;
+  padding: 40px;
+  background: #ffffff;
+}
+
+.right-modal .modal .modal-body .modal-about {
+  margin-bottom: 50px;
+}
+
+.right-modal .modal .modal-body .modal-about h3 {
+  color: #000;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.right-modal .modal .modal-body .location {
+  margin-bottom: 50px;
+}
+
+.right-modal .modal .modal-body .location h3 {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.right-modal .modal .modal-body .location ul {
+  padding-left: 0;
+}
+
+.right-modal .modal .modal-body .location ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.right-modal .modal .modal-body .location ul li i {
+  font-size: 18px;
+  color: #111111;
+}
+
+.right-modal .modal .modal-body .header-social h3 {
+  color: #000;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.right-modal .modal .modal-body .header-social ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.right-modal .modal .modal-body .header-social ul li a i {
+  color: #ffffff;
+  background: #1d3094;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 5px;
+  position: relative;
+  z-index: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.right-modal .modal .modal-body .header-social ul li a i::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  z-index: -1;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: 1px solid #dddddd;
+}
+
+.right-modal .modal .modal-body .header-social ul li a i:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.right-modal .modal .modal-body .header-social ul li a i:hover {
+  color: #2196f3;
+}
+
+.modal.right .modal-content {
+  min-height: 100vh;
+  border: 0;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-header .close {
+  margin-right: 0;
+}
+
+/* Modal CSS End */
+/* Home CSS Start */
+.home-style-three {
+  padding-top: 260px;
+  padding-bottom: 150px;
+  height: 100%;
+  position: relative;
+}
+
+.home-style-three .home-three-shapes img {
+  position: absolute;
+  -webkit-animation: rotate infinite 5s linear;
+          animation: rotate infinite 5s linear;
+}
+
+.home-style-three .home-three-shapes :nth-child(1) {
+  bottom: 60px;
+  left: 50%;
+}
+
+.home-style-three .home-three-shapes :nth-child(2) {
+  top: 35%;
+  left: 30px;
+}
+
+.home-style-three .home-three-shapes :nth-child(3) {
+  top: 180px;
+  left: 300px;
+}
+
+.home-style-three .home-three-shapes :nth-child(4) {
+  bottom: 40px;
+  left: 50px;
+  -webkit-animation: translate infinite 5s linear;
+          animation: translate infinite 5s linear;
+}
+
+.home-style-three .home-three-shapes :nth-child(5) {
+  bottom: 40%;
+  left: 55%;
+}
+
+.home-style-three .home-three-shapes :nth-child(6) {
+  top: 20%;
+  right: 10%;
+  -webkit-animation: translate infinite 5s linear;
+          animation: translate infinite 5s linear;
+}
+
+.home-style-three .home-image {
+  position: relative;
+  z-index: 0;
+}
+
+.home-style-three .home-image::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/home-shape.png);
+  background-size: cover;
+  background-position: center center;
+  width: 150px;
+  height: 150px;
+  left: -80px;
+  bottom: -80px;
+  z-index: -1;
+  -webkit-animation: translate infinite 5s linear;
+          animation: translate infinite 5s linear;
+}
+
+.home-bg-three {
+  background-image: url(../img/home/7.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.home-bg-three::before {
+  position: absolute;
+  content: '';
+  background: rgba(3, 24, 136, 0.9);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.home-text-three h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.home-text-three h1 span {
+  color: #fb788e;
+}
+
+.home-text-three p {
+  color: #ffffff;
+  margin-bottom: 45px;
+  margin-right: 130px;
+}
+
+.home-text-three .active-btn {
+  background: #2196f3;
+  border: 1px solid transparent;
+}
+
+.home-text-three .active-btn::before {
+  background: transparent;
+}
+
+.home-text-three .active-btn:hover {
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+
+/* Home CSS End */
+/* About CSS Start */
+.about-style-two {
+  padding-bottom: 120px;
+}
+
+.about-style-two .section-head {
+  margin: 0 0 15px;
+}
+
+.about-style-two .section-head span {
+  margin-bottom: 20px;
+}
+
+.about-style-two .section-head h2 {
+  margin-bottom: 25px;
+  
+}
+
+.about-style-two .about-image {
+  position: relative;
+}
+
+.about-style-two .about-image::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/about-shape.png);
+  background-position: center center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  left: -75px;
+  bottom: -125px;
+  -webkit-animation: translate infinite 3s linear;
+          animation: translate infinite 3s linear;
+}
+
+.about-style-two .about-image .counter-section {
+  position: absolute;
+  border-radius: 10px;
+  left: 0px;
+  bottom: 0;
+  right: 65px;
+  background: transparent;
+  height: 200px;
+}
+
+.about-style-two .about-image .counter-section::before {
+  display: none;
+}
+
+.about-style-two .about-image .counter-section .counter-area {
+  padding-top: 43px;
+  padding-bottom: 30px;
+}
+
+.about-style-two .about-image .counter-section .counter-area .counter-text {
+  margin-bottom: 20px;
+}
+
+.about-style-two .about-image .counter-section .counter-area .counter-text h2 {
+  font-size: 30px;
+}
+
+.about-style-two .about-text ul {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.about-style-two .about-text ul li {
+  font-size: 18px;
+  font-weight: 500;
+  color: #282828;
+  width: 245px;
+  margin-bottom: 10px;
+}
+
+.about-style-two .about-text ul li i {
+  color: #081d8a;
+  margin-right: 5px;
+}
+
+.about-style-two .about-text .theme-button .default-btn {
+  color: #2196f3;
+  border: 1px solid #2196f3;
+}
+
+.about-style-two .about-text .theme-button .default-btn:hover {
+  background: #2196f3;
+  color: #ffffff;
+}
+
+.about-style-two .about-text .theme-button .active-btn {
+  background: #2196f3;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.about-style-two .about-text .theme-button .active-btn::before {
+  background: #2196f3;
+  width: 100%;
+}
+
+.about-style-two .about-text .theme-button .active-btn:hover {
+  color: #2196f3;
+  background: transparent;
+  border: 1px solid #2196f3;
+}
+
+.about-style-two .about-text .theme-button .active-btn:hover::before {
+  width: 0;
+}
+
+/* About CSS End */
+/* Service CSS Start */
+.service-style-three {
+  background: #eaedff;
+}
+
+.service-style-three .service-slider {
+  position: relative;
+}
+
+.service-style-three .service-slider::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/service/shapes/service-pattern-5.png);
+  background-position: center center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  left: -10px;
+  top: -80px;
+}
+
+.service-style-three .service-slider .service-item {
+  text-align: center;
+  border-radius: 10px;
+  padding: 35px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 30px;
+  background: #ffffff;
+  border: 1px solid #c3ccff;
+}
+
+.service-style-three .service-slider .service-item::before {
+  position: absolute;
+  content: '';
+  background: #031888;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.service-style-three .service-slider .service-item:hover {
+  -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+          box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+}
+
+.service-style-three .service-slider .service-item:hover::before {
+  height: 100%;
+}
+
+.service-style-three .service-slider .service-item:hover::after {
+  opacity: 1;
+}
+
+.service-style-three .service-slider .service-item:hover i, .service-style-three .service-slider .service-item:hover h3, .service-style-three .service-slider .service-item:hover p {
+  color: #ffffff;
+}
+
+.service-style-three .service-slider .service-item:hover i::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.service-style-three .service-slider .service-item:hover .service-shape img {
+  opacity: 1;
+}
+
+.service-style-three .service-slider .service-item:hover .theme-button .default-btn {
+  background: #ffffff;
+}
+
+.service-style-three .service-slider .service-item i {
+  color: #2196f3;
+  font-size: 50px;
+  display: inline-block;
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 20px;
+}
+
+.service-style-three .service-slider .service-item h3 {
+  color: #111111;
+  margin-bottom: 15px;
+  line-height: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.service-style-three .service-slider .service-item p {
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-bottom: 20px;
+}
+
+.service-style-three .service-slider .service-item .theme-button .default-btn {
+  color: #2196f3;
+  border: 1px solid #2196f3;
+  margin-right: 0;
+  padding: 10px 40px;
+}
+
+.service-style-three .service-slider .service-item .theme-button .default-btn:hover::before {
+  display: none;
+  color: #2196f3;
+}
+
+.service-style-three .service-slider .service-item .service-shape img {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.service-style-three .service-slider .service-item .service-shape :nth-child(1) {
+  top: -30px;
+  left: 20px;
+}
+
+.service-style-three .service-slider .service-item .service-shape :nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.service-style-three .service-slider .service-item .service-shape :nth-child(3) {
+  bottom: 0;
+  right: 0;
+}
+
+.service-style-three .service-slider .service-item .service-shape :nth-child(4) {
+  bottom: 90px;
+  left: 30px;
+}
+
+.service-style-three .service-slider .service-item .service-shape :nth-child(5) {
+  bottom: 0;
+  left: 0;
+}
+
+.service-slider.owl-carousel .owl-item img {
+  max-width: 100%;
+  width: inherit;
+}
+
+.service-slider.owl-carousel .owl-nav button.owl-next,
+.service-slider.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  color: #031888;
+  width: 55px;
+  height: 55px;
+  background: #ffffff;
+  border-radius: 50px;
+  font-size: 30px;
+  left: -95px;
+  top: 40%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.service-slider.owl-carousel .owl-nav button.owl-next:hover,
+.service-slider.owl-carousel .owl-nav button.owl-prev:hover {
+  background: #031888;
+  color: #ffffff;
+}
+
+.service-slider.owl-carousel .owl-nav button.owl-next {
+  left: inherit;
+  right: -95px;
+}
+
+/* Service CSS End */
+/* Why Choose CSS Start */
+.why-us {
+  overflow: hidden;
+}
+
+.why-us .why-us-text {
+  padding-left: 45px;
+}
+
+.why-us .why-us-text .section-head {
+  margin: 0 0 45px;
+}
+
+.why-us .why-us-text .media {
+  display: -webkit-box;
+}
+
+.why-us .why-us-text .media:hover i {
+  background: #031888;
+}
+
+.why-us .why-us-text .media i {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 25px;
+  color: #ffffff;
+  background: #818bc3;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+}
+
+.why-us .why-us-text .media .media-body h5 {
+  font-size: 18px;
+  color: #282828;
+  font-weight: 600;
+}
+
+.why-us .why-us-text .media .media-body p {
+  padding-right: 10px;
+  font-size: 15px;
+}
+
+.why-us .why-us-img {
+  background-image: url(../img/why-choose/2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+/* Why Choose CSS End */
+/* Process CSS Start */
+.process-style-three {
+  background: #031888;
+  padding-top: 100px;
+  position: relative;
+}
+
+.process-style-three .section-head {
+  margin: 0 auto 120px;
+}
+
+.process-style-three .section-head h2 {
+  color: #ffffff;
+}
+
+.process-style-three .section-head p {
+  color: #ffffff;
+}
+
+.process-style-three .process-card::before {
+  display: none;
+}
+
+.process-style-three .process-card:hover i {
+  color: #031888;
+}
+
+.process-style-three .process-card:hover i::after {
+  background: #ffffff;
+}
+
+.process-style-three .process-card i {
+  margin-bottom: 110px;
+}
+
+.process-style-three .process-card i::after {
+  background: transparent;
+  border: 1px dashed #ffffff;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+}
+
+.process-style-three .process-card h3 {
+  color: #faa788;
+}
+
+.process-style-three .process-card p {
+  color: #ffffff;
+}
+
+.process-style-three .process-shapes img {
+  position: absolute;
+  -webkit-animation: rotate infinite 6s linear;
+          animation: rotate infinite 6s linear;
+}
+
+.process-style-three .process-shapes :nth-child(1) {
+  top: 100px;
+  left: 100px;
+}
+
+.process-style-three .process-shapes :nth-child(2) {
+  top: 150px;
+  left: 20%;
+}
+
+.process-style-three .process-shapes :nth-child(3) {
+  top: 70px;
+  left: 65%;
+}
+
+.process-style-three .process-shapes :nth-child(4) {
+  bottom: 70px;
+  left: 80px;
+  -webkit-animation: translate infinite 5s linear;
+          animation: translate infinite 5s linear;
+}
+
+.process-style-three .process-shapes :nth-child(5) {
+  bottom: 70px;
+  right: 50px;
+}
+
+.process-style-three .process-shapes :nth-child(6) {
+  top: 150px;
+  right: 80px;
+  -webkit-animation: translate infinite 5s linear;
+          animation: translate infinite 5s linear;
+}
+
+/* Process CSS End */
+/* Recent project CSS Start */
+.recent-project-section .recent-project-slider {
+  position: relative;
+}
+
+.recent-project-section .recent-project-slider .recent-project-item {
+  -webkit-box-shadow: 0 0 15px 0 #ddd;
+          box-shadow: 0 0 15px 0 #ddd;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.recent-project-section .recent-project-slider .recent-project-item:hover .project-img .recent-hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.recent-project-section .recent-project-slider .recent-project-item .project-img {
+  position: relative;
+}
+
+.recent-project-section .recent-project-slider .recent-project-item .project-img img {
+  border-radius: 10px 10px 0 0;
+}
+
+.recent-project-section .recent-project-slider .recent-project-item .project-img .recent-hover {
+  position: absolute;
+  background: rgba(3, 24, 136, 0.76);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.recent-project-section .recent-project-slider .recent-project-item .project-img .recent-hover i {
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  line-height: 50px;
+  font-size: 20px;
+  display: inline-block;
+  background: #2196f3;
+}
+
+.recent-project-section .recent-project-slider .recent-project-item .project-text {
+  text-align: center;
+  padding: 25px;
+}
+
+.recent-project-section .recent-project-slider .recent-project-item .project-text h3 {
+  color: #2196f3;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+.recent-project-section .recent-project-slider .recent-project-item .project-text h3 a {
+  color: #2196f3;
+}
+
+.recent-project-section .recent-project-slider .recent-project-item .project-text h3 a:hover {
+  color: #031888;
+}
+
+.recent-project-section .recent-project-slider .recent-project-item .project-text p {
+  color: #454545;
+  margin-bottom: 0;
+  line-height: 1;
+  font-size: 15px;
+}
+
+.recent-project-slider .owl-prev {
+  position: absolute;
+  color: #031888 !important;
+  width: 55px;
+  height: 55px;
+  background: #ffffff !important;
+  border-radius: 50% !important;
+  font-size: 30px !important;
+  left: 170px;
+  top: 36%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  line-height: 55px !important;
+}
+
+.recent-project-slider .owl-prev:hover {
+  background: #031888 !important;
+  color: #ffffff !important;
+}
+
+.recent-project-slider .owl-next {
+  position: absolute;
+  color: #031888 !important;
+  width: 55px;
+  height: 55px;
+  background: #ffffff !important;
+  border-radius: 50% !important;
+  font-size: 30px !important;
+  right: 170px;
+  top: 36%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  line-height: 55px !important;
+}
+
+.recent-project-slider .owl-next:hover {
+  background: #031888 !important;
+  color: #ffffff !important;
+}
+
+.recent-project-slider:hover .owl-prev {
+  left: 190px;
+  opacity: 1;
+}
+
+.recent-project-slider:hover .owl-next {
+  right: 190px;
+  opacity: 1;
+}
+
+/* Recent project CSS End */
+/* Price Section CSS Start */
+.price-style-three .price-card-area {
+  position: relative;
+  z-index: 0;
+}
+
+.price-style-three .price-card-area:hover::before {
+  height: 100%;
+}
+
+.price-style-three .price-card-area:hover .plan-features ul li {
+  color: #ffffff;
+}
+
+.price-style-three .price-card-area:hover .plan-features ul li i {
+  color: #ffffff;
+}
+
+.price-style-three .price-card-area:hover .plan-btn a {
+  background: #ffffff;
+  color: #031888;
+}
+
+.price-style-three .price-card-area:hover .plan-btn a::before {
+  display: none;
+}
+
+.price-style-three .price-card-area:hover .price-head-text .price-head-hover {
+  opacity: 1;
+}
+
+.price-style-three .price-card-area::before {
+  position: absolute;
+  content: '';
+  background: #031888;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.price-style-three .price-card-area .price-head-text {
+  position: relative;
+}
+
+.price-style-three .price-card-area .price-head-text .price-head-hover {
+  background: #031888;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  left: 0;
+  top: 0;
+}
+
+.price-style-three .price-card-area .price-head-text .price-head-hover img {
+  position: relative;
+}
+
+.price-style-three .price-card-area .price-head-text .price-head-hover :nth-child(1) {
+  top: 0;
+  left: -80px;
+}
+
+.price-style-three .price-card-area .price-head-text .price-head-hover :nth-child(2) {
+  top: -17px;
+  right: -82px;
+}
+
+.price-style-three .price-card-area .price-shapes img {
+  position: absolute;
+}
+
+.price-style-three .price-card-area .price-shapes :nth-child(1) {
+  right: 65px;
+  bottom: 35px;
+}
+
+.price-style-three .price-card-area .price-shapes :nth-child(2) {
+  bottom: 150px;
+  left: 60px;
+}
+
+.price-style-three .price-card-area .price-shapes :nth-child(3) {
+  left: 0;
+  bottom: 35px;
+}
+
+.price-style-three .active-price::before {
+  height: 100%;
+}
+
+.price-style-three .active-price .plan-features ul li {
+  color: #ffffff;
+}
+
+.price-style-three .active-price .plan-features ul li i {
+  color: #ffffff;
+}
+
+.price-style-three .active-price .plan-btn a {
+  background: #ffffff;
+  color: #031888;
+}
+
+.price-style-three .active-price .plan-btn a::before {
+  display: none;
+}
+
+.price-style-three .active-price .price-head-text .price-head-hover {
+  opacity: 1;
+}
+
+/* Price Section CSS End */
+/* Team Section CSS Start */
+.team-style-five {
+  padding-top: 0;
+}
+
+/* Team Section CSS End */
+/*------------- HOME PAGE THREE CSS END ----------------*/

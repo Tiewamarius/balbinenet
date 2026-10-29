@@ -1,0 +1,676 @@
+/*------------- HOME PAGE TWO CSS START -----------*/
+/* Home Section CSS Start */
+.home-bg {
+  background-image: url(../img/home/4.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 1160px;
+}
+
+.home-style-two {
+  position: relative;
+}
+
+.home-style-two .home-text-two {
+  max-width: 700px;
+  padding-top: 245px;
+}
+
+.home-style-two .home-text-two h1 {
+  font-size: 75px;
+  color: #111111;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.home-style-two .home-text-two p {
+  color: #474747;
+  padding-right: 100px;
+  margin-bottom: 45px;
+}
+
+.home-style-two .home-text-two .request-call {
+  max-width: 471px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.home-style-two .home-text-two .request-call .form-control {
+  color: #282828;
+  padding-top: 7px;
+  padding-left: 20px;
+  border: 0;
+  height: 60px;
+}
+
+.home-style-two .home-text-two .request-call button {
+  background: #031888;
+  color: #ffffff;
+  position: absolute;
+  height: 100%;
+  width: 170px;
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+  border: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.home-style-two .home-text-two .request-call button:hover {
+  background: #2196f3;
+}
+
+.home-style-two .home-image img {
+  position: absolute;
+  top: 250px;
+  right: 150px;
+  border: 10px solid #f8e9e9;
+  border-radius: 50%;
+  -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+          box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+}
+
+.home-style-two .home-image :nth-child(2) {
+  top: 445px;
+  right: 400px;
+  border: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  -webkit-animation: scale infinite 5s;
+          animation: scale infinite 5s;
+}
+
+.home-style-two .home-shape img {
+  position: absolute;
+  -webkit-animation: scale infinite 5s;
+          animation: scale infinite 5s;
+}
+
+.home-style-two .home-shape :nth-child(1) {
+  top: 10%;
+  left: 40%;
+}
+
+.home-style-two .home-shape :nth-child(2) {
+  top: 40%;
+  left: 40%;
+}
+
+.home-style-two .home-shape :nth-child(3) {
+  top: 20px;
+}
+
+.home-style-two .home-shape :nth-child(4) {
+  bottom: 35%;
+  left: 10%;
+}
+
+.home-style-two .home-shape :nth-child(5) {
+  bottom: 30%;
+  left: 40%;
+}
+
+.home-style-two .home-shape :nth-child(6) {
+  top: 20%;
+  left: 20px;
+}
+
+.home-style-two .home-shape :nth-child(7) {
+  top: 10%;
+  right: 20%;
+}
+
+.home-style-two .home-shape :nth-child(8) {
+  bottom: 40%;
+  right: 5%;
+}
+
+.home-style-two .home-shape :nth-child(9) {
+  top: 35%;
+  left: 50%;
+}
+
+.home-style-two .home-shape :nth-child(10) {
+  top: 36%;
+  right: 5%;
+}
+
+/* Home Section CSS End */
+/* Info CSS Start */
+.info-section {
+  margin-top: -300px;
+  z-index: 1;
+  position: relative;
+}
+
+.info-section .info-area {
+  background: #2196f3;
+  border-radius: 5px;
+  padding: 25px;
+  -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+          box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+}
+
+.info-section .info-area .info-text {
+  text-align: center;
+}
+
+.info-section .info-area .info-text i {
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  background: #4976e0;
+  display: inline-block;
+  line-height: 45px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.info-section .info-area .info-text h6 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.info-section .info-area .info-text p {
+  font-size: 16px;
+  color: #d8e5ff;
+  margin-bottom: 0;
+}
+
+/* Info CSS End */
+/* Service CSS Start */
+.service-style-two {
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.service-style-two::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/service/shapes/service-pattern-3.png);
+  background-position: center center;
+  background-size: cover;
+  height: 230px;
+  width: 105px;
+  right: 0;
+  top: 247px;
+  -webkit-animation: translateY infinite 3s;
+          animation: translateY infinite 3s;
+}
+
+.service-style-two .service-slider-wrapper {
+  position: relative;
+}
+
+.service-style-two .service-slider-wrapper::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/service/shapes/service-pattern-4.png);
+  background-position: center center;
+  background-size: cover;
+  width: 120px;
+  height: 115px;
+  top: -70px;
+  left: -60px;
+  z-index: -1;
+  -webkit-animation: rotate infinite 10s linear;
+          animation: rotate infinite 10s linear;
+}
+
+.service-style-two .service-slider-wrapper .owl-nav {
+  margin-top: 0;
+}
+
+.service-style-two .service-slider-wrapper .owl-prev {
+  position: absolute;
+  color: #ffffff !important;
+  width: 55px;
+  height: 55px;
+  background: #a7aed5 !important;
+  border-radius: 50% !important;
+  font-size: 30px !important;
+  left: -100px;
+  top: 36%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  line-height: 55px !important;
+}
+
+.service-style-two .service-slider-wrapper .owl-prev:hover {
+  background: #031888 !important;
+  color: #ffffff !important;
+}
+
+.service-style-two .service-slider-wrapper .owl-next {
+  position: absolute;
+  color: #ffffff !important;
+  width: 55px;
+  height: 55px;
+  background: #a7aed5 !important;
+  border-radius: 50% !important;
+  font-size: 30px !important;
+  right: -100px;
+  top: 36%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  line-height: 55px !important;
+}
+
+.service-style-two .service-slider-wrapper .owl-next:hover {
+  background: #031888 !important;
+  color: #ffffff !important;
+}
+
+.service-style-two .service-slider-wrapper .bg-white {
+  background-color: #ffffff;
+}
+
+.service-style-two .service-img img {
+  width: 100%;
+}
+
+.service-style-two .service-text-two {
+  padding-left: 30px;
+}
+
+.service-style-two .service-text-two h4 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+.service-style-two .service-text-two p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.service-style-two .service-text-two ul {
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+.service-style-two .service-text-two ul li {
+  display: block;
+  color: #282828;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.service-style-two .service-text-two ul li i {
+  margin-right: 10px;
+  color: #031888;
+}
+
+.service-style-two .service-text-two ul :last-child {
+  margin-bottom: 0;
+}
+
+.service-style-two .service-text-two .theme-button .default-btn {
+  background: #031888;
+  border: 0;
+  padding: 15px 30px;
+}
+
+/* Service CSS End */
+/* Hire CSS Start */
+.hire-section {
+  background: #e8ebff;
+}
+
+.hire-section .container-fluid {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: unset;
+}
+
+.hire-section .hire-text .section-head {
+  margin-left: -15px;
+  margin-bottom: 30px;
+}
+
+.hire-section .hire-text .section-head p {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.hire-section .hire-text ul {
+  padding-left: 0;
+  margin-bottom: 33px;
+}
+
+.hire-section .hire-text ul li {
+  display: block;
+  color: #282828;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.hire-section .hire-text ul li i {
+  margin-right: 10px;
+  color: #031888;
+  font-size: 20px;
+}
+
+.hire-section .hire-text .theme-button {
+  margin-left: -15px;
+}
+
+.hire-section .hire-text .theme-button .default-btn {
+  background: #031888;
+  border: 0;
+}
+
+.hire-section .hire-img {
+  background-image: url(../img/hire/hire.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hire-section .discount-text {
+  background: #031888;
+  text-align: center;
+  max-width: 470px;
+  padding: 70px;
+  border-radius: 10px;
+  margin-top: -302px;
+  margin-left: -90px;
+  z-index: 1;
+  position: relative;
+  bottom: 150px;
+  left: 0;
+}
+
+.hire-section .discount-text h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hire-section .discount-text h2 span {
+  color: #fb788e;
+}
+
+.hire-section .discount-text .theme-button .default-btn {
+  color: #031888;
+  background: #ffffff;
+  border: 0;
+}
+
+.hire-section .discount-text .theme-button .default-btn:hover {
+  color: #ffffff;
+}
+
+.hire-section .discount-text .discount-shape img {
+  position: absolute;
+  -webkit-animation: translate infinite 3s;
+          animation: translate infinite 3s;
+}
+
+.hire-section .discount-text .discount-shape :nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.hire-section .discount-text .discount-shape :nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.hire-section .discount-text .discount-shape :nth-child(3) {
+  bottom: 40px;
+  right: -10px;
+}
+
+.hire-section .discount-text .discount-shape :nth-child(4) {
+  bottom: 0px;
+  left: 0;
+}
+
+.hire-section .discount-text .discount-shape :nth-child(5) {
+  bottom: 45px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: -9;
+}
+
+/* Hire CSS End */
+/* Process CSS Start */
+.process-style-two {
+  padding-top: 100px;
+}
+
+.process-style-two .section-head {
+  margin: -6px auto 130px;
+}
+
+.process-style-two .process-card i::after {
+  background: #e1ebff;
+}
+
+/* Process CSS End */
+/* Counter CSS Start */
+.counter-style-two {
+  background: #031888;
+  position: relative;
+}
+
+.counter-style-two h2 {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: -7px;
+}
+
+.counter-style-two h2 span {
+  color: #fb788e;
+}
+
+.counter-style-two .counter-text {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.counter-style-two .counter-text h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fb788e;
+  margin-bottom: 10px;
+}
+
+.counter-style-two .counter-text p {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.counter-style-two .counter-shape img {
+  position: absolute;
+}
+
+.counter-style-two .counter-shape :nth-child(1) {
+  top: 30px;
+  left: 50px;
+}
+
+.counter-style-two .counter-shape :nth-child(2) {
+  top: 110px;
+  right: 10%;
+}
+
+.counter-style-two .counter-shape :nth-child(3) {
+  top: 50px;
+  right: 25%;
+}
+
+.counter-style-two .counter-shape :nth-child(4) {
+  top: 30px;
+  left: 35%;
+}
+
+.counter-style-two .counter-shape :nth-child(5) {
+  top: 30px;
+  left: 400px;
+}
+
+.counter-style-two .counter-shape :nth-child(6) {
+  top: 80px;
+  left: 20%;
+}
+
+.counter-style-two .counter-shape :nth-child(7) {
+  bottom: 30px;
+  left: 50%;
+}
+
+.counter-style-two .counter-shape :nth-child(8) {
+  bottom: 24px;
+  left: 20%;
+}
+
+.counter-style-two .counter-shape :nth-child(9) {
+  bottom: 80px;
+  left: 50px;
+}
+
+.counter-style-two .counter-shape :nth-child(10) {
+  bottom: 30px;
+  right: 90px;
+}
+
+/* Counter CSS End */
+/* Recent CSS Start */
+.recent-work-section {
+  padding-bottom: 100px;
+}
+
+.recent-work-section .recent-work-slider {
+  position: relative;
+}
+
+.recent-work-section .recent-work-slider .recent-items {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.recent-work-section .recent-work-slider .recent-items .recent-img {
+  position: relative;
+  cursor: pointer;
+}
+
+.recent-work-section .recent-work-slider .recent-items .recent-img:hover .recent-hover {
+  -webkit-transform: scale(1) rotate(360deg);
+          transform: scale(1) rotate(360deg);
+}
+
+.recent-work-section .recent-work-slider .recent-items .recent-img .recent-hover {
+  position: absolute;
+  background: rgba(3, 24, 136, 0.76);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.recent-work-section .recent-work-slider .recent-items .recent-img .recent-hover i {
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  line-height: 50px;
+  font-size: 20px;
+  display: inline-block;
+  background: #2196f3;
+}
+
+.recent-work-section .recent-work-slider.owl-theme .owl-dots {
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.recent-work-section .recent-work-slider.owl-theme .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  background: #818bc3;
+}
+
+.recent-work-section .recent-work-slider.owl-theme .owl-dots .owl-dot.active span,
+.recent-work-section .recent-work-slider.owl-theme .owl-dots .owl-dot:hover span {
+  background: #031888;
+  position: relative;
+}
+
+.recent-work-section .recent-work-slider.owl-theme .owl-dots .owl-dot.active span::before,
+.recent-work-section .recent-work-slider.owl-theme .owl-dots .owl-dot:hover span::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  left: -4px;
+  right: 0px;
+  top: -4px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #031888;
+}
+
+/* Recent CSS End */
+/* Price CSS Start */
+.price-shape {
+  position: relative;
+}
+
+.price-shape::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/process-pattern-1.png);
+  background-position: center center;
+  background-size: cover;
+  width: 158px;
+  height: 152px;
+  top: -85px;
+  right: -80px;
+}
+
+/* Price CSS End */
+/* Team  CSS Start */
+.team-style-two {
+  padding-top: 0;
+  position: relative;
+}
+
+.team-style-two::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/price.png);
+  background-size: cover;
+  background-position: center center;
+  width: 100px;
+  height: 285px;
+  top: -130px;
+  left: 0;
+  -webkit-animation: translateY  infinite 3s;
+          animation: translateY  infinite 3s;
+}
+
+/* Team CSS End */
+/*------------- HOME PAGE TWO CSS END --------------*/

@@ -1,52 +1,115 @@
-export default function Header(){
-    return <>
-    
-        {/* Header Section Start*/}
-        <div className="header-section">
-            <div className="container">
-                <div className="row align-items-center">
-                    <div className="col-lg-8 col-md-12">
-                        <div className="header-widget">
-                            <ul>
-                                <li>
-                                    <i className="icofont-clock-time"></i>
-                                    Sun - Thu : 10:00AM - 06:00PM
-                                </li>
-                                <li>
-                                    <i className="icofont-location-pin"></i>
-                                    28/A Street, New York City
-                                </li>
-                                <li>
-                                    <i className="icofont-phone"></i>
-                                    <a href="tel:+880123456789">
-                                        +88 0123 456 789
-                                    </a>
-                                </li>
-                            </ul>
+
+import "../assets/css/header.css";
+
+import {
+    FaFacebookF,
+    FaLinkedinIn,
+    FaInstagram,
+    FaClock,
+    FaLocationDot,
+    FaPhone,
+    FaWhatsapp
+} from "react-icons/fa6";
+
+export default function Header() {
+    return (
+        <>
+            {/* Header Section Start */}
+            <div className="header-section">
+                <div className="container">
+                    <div className="row align-items-center">
+                        {/* Informations de contact */}
+                        <div className="col-lg-8 col-md-12">
+                            <div className="header-widget">
+                                <ul>
+                                    <li>
+                                        <FaClock className="header-icon" />
+                                        <span>
+                                            Lun - Dim : 09H:00 - 19H:00
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <FaLocationDot className="header-icon" />
+                                        <span>
+                                            1725 Rue Lambert Feh-Kesse, Bingerville
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <FaPhone className="header-icon" />
+                                        <a href="tel:+225 07 09 01 99 99">
+                                            +225 07 09 01 99 99
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        {/* Réseaux sociaux */}
+                        <div className="col-lg-4 col-md-12">
+                            <div className="header-social text-end">
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://www.facebook.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Facebook"
+                                        >
+                                            <FaFacebookF />
+                                        </a>
+                                    </li>
+
+                                    {/* <li>
+                                        <a
+                                            href="https://x.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="X (Twitter)"
+                                        >
+                                            <FaXTwitter />
+                                        </a>
+                                    </li> */}
+
+                                    <li>
+                                        <a
+                                            href="https://www.linkedin.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="LinkedIn"
+                                        >
+                                            <FaLinkedinIn />
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="https://www.instagram.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Instagram"
+                                        >
+                                            <FaInstagram />
+                                        </a>
+                                    </li><li>
+                                        <a
+                                            href="https://www.instagram.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Instagram"
+                                        >
+                                            <FaWhatsapp />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div className="col-md-4">
-                        <div className="header-social text-end">
-                            <ul>
-                                <li>
-                                    <a href="https://www.facebook.com/" target="_blank"><i className="icofont-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com/" target="_blank"><i className="icofont-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/" target="_blank"><i className="icofont-linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/" target="_blank"><i className="icofont-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>              
                 </div>
             </div>
-        </div>
-        
-        {/* Header Section End */}
-    </>
+            {/* Header Section End */}
+        </>
+    );
 }

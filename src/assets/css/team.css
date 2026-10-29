@@ -1,0 +1,95 @@
+/*-------------- TEAM PAGE CSS START ---------------*/
+/* Team Title CSS Start */
+.team-title-bg {
+  background-image: url(../img/title-bg/7.png);
+  background-position: center center;
+  background-size: cover;
+  height: 350px;
+  position: relative;
+  z-index: 0;
+}
+
+.team-title-bg::before {
+  position: absolute;
+  content: '';
+  background: rgba(3, 24, 136, 0.7);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.team-title .team-title-text {
+  text-align: center;
+}
+
+.team-title .team-title-text h2 {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.team-title .team-title-text ul {
+  padding-left: 0;
+}
+
+.team-title .team-title-text ul li {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.team-title .team-title-text ul li a {
+  color: #ffffff;
+}
+
+.team-title .team-title-text ul li a:hover {
+  color: #2196f3;
+}
+
+.team-title .team-title-text ul li i {
+  color: #031888;
+}
+
+/* Team Title CSS End */
+/* Team Section CSS Start */
+.team-members {
+  padding-top: 100px;
+}
+
+.team-members .pagination {
+  margin: 15px 0 30px 0;
+}
+
+.team-members .pagination .page-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 7px;
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 0;
+  -webkit-box-shadow: 0 0 20px 0 #0000002e;
+          box-shadow: 0 0 20px 0 #0000002e;
+  color: #031888;
+}
+
+.team-members .pagination .page-link:hover {
+  background: #031888;
+  color: #ffffff;
+}
+
+.team-members .pagination .active {
+  background: #031888;
+  color: #ffffff;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+/* Team Section CSS End */

@@ -1,0 +1,50 @@
+/*------------- RECENT PROJECT PAGE CSS START --------------*/
+.recent-style-two .recent-items {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.recent-style-two .recent-items .recent-img {
+  position: relative;
+  cursor: pointer;
+}
+
+.recent-style-two .recent-items .recent-img img {
+  width: 100%;
+}
+
+.recent-style-two .recent-items .recent-img:hover .recent-hover {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.recent-style-two .recent-items .recent-img .recent-hover {
+  position: absolute;
+  background: rgba(3, 24, 136, 0.76);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.recent-style-two .recent-items .recent-img .recent-hover i {
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  line-height: 50px;
+  font-size: 20px;
+  display: inline-block;
+  background: #2196f3;
+}
+
+.process-style-four {
+  padding-top: 0;
+}
+
+/*-------------- RECENT RECENT PAGE CSS END -------------*/

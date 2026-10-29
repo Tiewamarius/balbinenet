@@ -1,0 +1,168 @@
+/* =====================================================
+   NAVBAR
+===================================================== */
+/* =====================================================
+   NAVBAR FIXE AU SCROLL
+===================================================== */
+
+.navbar-area {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/* Navbar */
+.main-nav {
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.main-nav .navbar {
+    padding: 0;
+    min-height: 50px;
+}
+
+.main-nav .navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.main-nav .navbar-brand img,
+.mobile-nav .logo img {
+    max-width: 180px;
+    height: auto;
+}
+
+.main-nav .white-logo,
+.mobile-nav .white-logo {
+    display: none;
+}
+
+.main-nav .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main-nav .nav-item {
+    position: relative;
+}
+
+.main-nav .nav-link {
+    display: block;
+    padding: 25px 14px;
+    color: #222222;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link.active {
+    color: #0092bc;
+}
+
+
+/* =====================================================
+   SOUS-MENU
+===================================================== */
+
+.main-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    margin: 0;
+    padding: 10px 0;
+    background: #ffffff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+    z-index: 10000;
+}
+
+.main-nav .nav-item:hover > .dropdown-menu,
+.main-nav .nav-item:focus-within > .dropdown-menu {
+    display: block;
+}
+
+.main-nav .dropdown-menu .nav-link {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   BOUTON DEMANDER DEVIS
+===================================================== */
+
+.navbar-button a {
+    display: inline-block;
+    padding: 12px 22px;
+    color: #ffffff;
+    background: #0092bc;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.navbar-button a:hover {
+    background: #087da0;
+}
+
+
+/* =====================================================
+   BOUTON MON COMPTE
+===================================================== */
+
+.navbar-buttons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    color: #0092bc;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.navbar-buttons:hover {
+    color: #087da0;
+}
+
+
+/* =====================================================
+   MENU MOBILE
+===================================================== */
+
+.mobile-nav {
+    display: none;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .main-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        padding: 15px 20px;
+        background: #ffffff;
+    }
+
+    .mobile-nav .logo {
+        display: inline-flex;
+        align-items: center;
+    }
+}

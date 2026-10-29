@@ -1,0 +1,359 @@
+/*-------------- SERVICE PAGE CSS START --------------*/
+/* Service Title CSS Start */
+.service-title-bg {
+  background-image: url(assets/img/team/1.png);
+  background-position: center center;
+  background-size: cover;
+  height: 350px;
+  position: relative;
+  z-index: 0;
+}
+
+.service-title-bg.bg-1 {
+  background-image: url(../img/title-bg/8.png);
+}
+
+.service-title-bg.bg-2 {
+  background-image: url(../img/title-bg/9.png);
+}
+
+.service-title-bg.bg-3 {
+  background-image: url(../img/title-bg/10.png);
+}
+
+.service-title-bg::before {
+  position: absolute;
+  content: '';
+  background: rgba(3, 24, 136, 0.35);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.service-title .service-title-text {
+  text-align: center;
+}
+
+.service-title .service-title-text h2 {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.service-title .service-title-text ul {
+  padding-left: 0;
+}
+
+.service-title .service-title-text ul li {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.service-title .service-title-text ul li a {
+  color: #ffffff;
+}
+
+.service-title .service-title-text ul li a:hover {
+  color: #031888;
+}
+
+.service-title .service-title-text ul li i {
+  color: #031888;
+}
+
+/* Service Title CSS End */
+/* Service  CSS Start */
+.main-service-area {
+  padding-bottom: 70px;
+}
+
+.main-service-area .service-item {
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 30px;
+  background: #ffffff;
+  border: 1px solid #c3ccff;
+}
+
+.main-service-area .service-item::before {
+  position: absolute;
+  content: '';
+  background: #031888;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main-service-area .service-item:hover {
+  -webkit-box-shadow: 0 10px 30px 0 #cfc4f7;
+          box-shadow: 0 10px 30px 0 #cfc4f7;
+}
+
+.main-service-area .service-item:hover::before {
+  height: 100%;
+}
+
+.main-service-area .service-item:hover::after {
+  opacity: 1;
+}
+
+.main-service-area .service-item:hover i, .main-service-area .service-item:hover h3, .main-service-area .service-item:hover p {
+  color: #ffffff;
+}
+
+.main-service-area .service-item:hover i::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.main-service-area .service-item:hover .theme-button .default-btn {
+  background: #ffffff;
+}
+
+.main-service-area .service-item i {
+  color: #2196f3;
+  font-size: 50px;
+  display: inline-block;
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 20px;
+}
+
+.main-service-area .service-item h3 {
+  color: #111111;
+  margin-bottom: 15px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main-service-area .service-item p {
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-bottom: 20px;
+}
+
+.main-service-area .service-item .theme-button .default-btn {
+  color: #2196f3;
+  margin-right: 0;
+  padding: 10px 40px;
+  border: 1px solid #2196f3;
+}
+
+.main-service-area .service-item .theme-button .default-btn:hover::before {
+  display: none;
+  color: #2196f3;
+}
+
+.main-service-area .service-item .service-shape img {
+  position: absolute;
+}
+
+.main-service-area .service-item .service-shape :nth-child(1) {
+  top: 0px;
+  left: 0px;
+}
+
+.main-service-area .service-item .service-shape :nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.main-service-area .service-item .service-shape :nth-child(3) {
+  bottom: 0;
+  right: 50px;
+}
+
+.main-service-area .service-item .service-shape :nth-child(4) {
+  bottom: 90px;
+  left: 30px;
+}
+
+.main-service-area .service-item .service-shape :nth-child(5) {
+  bottom: 0;
+  left: 0;
+}
+
+.main-service-area .service-sidebar .form-group {
+  position: relative;
+  -webkit-box-shadow: 0 0 15px 0 #0000001c;
+          box-shadow: 0 0 15px 0 #0000001c;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  line-height: 0;
+}
+
+.main-service-area .service-sidebar .form-group .form-control {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #2196f3;
+  border-radius: 5px;
+}
+
+.main-service-area .service-sidebar .form-group .form-control ::-webkit-input-placeholder {
+  color: #464646;
+  font-size: 15px;
+}
+
+.main-service-area .service-sidebar .form-group .form-control :-ms-input-placeholder {
+  color: #464646;
+  font-size: 15px;
+}
+
+.main-service-area .service-sidebar .form-group .form-control ::-ms-input-placeholder {
+  color: #464646;
+  font-size: 15px;
+}
+
+.main-service-area .service-sidebar .form-group .form-control ::placeholder {
+  color: #464646;
+  font-size: 15px;
+}
+
+.main-service-area .service-sidebar .search-form .btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #ffffff;
+  font-size: 20px;
+  height: 50px;
+}
+
+.main-service-area .service-sidebar .service-list {
+  margin-bottom: 30px;
+}
+
+.main-service-area .service-sidebar .service-list p {
+  font-size: 18px !important;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 15px;
+}
+
+.main-service-area .service-sidebar .service-list ul {
+  padding-left: 0;
+}
+
+.main-service-area .service-sidebar .service-list ul li {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: 1px dashed #a58888;
+}
+
+.main-service-area .service-sidebar .service-list ul li:hover {
+  background: #2196f3;
+  color: #ffffff;
+}
+
+.main-service-area .service-sidebar .service-list ul li:hover a {
+  color: #ffffff;
+}
+
+.main-service-area .service-sidebar .service-list ul li a {
+  color: #646464;
+  display: block;
+}
+
+.main-service-area .service-sidebar .service-list ul li i {
+  font-size: 18px;
+  top: 6px;
+  position: relative;
+  float: right;
+}
+
+.main-service-area .service-sidebar .discount-text {
+  background: #031888;
+  text-align: center;
+  padding: 50px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.main-service-area .service-sidebar .discount-text h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.main-service-area .service-sidebar .discount-text h1 span {
+  color: #fb788e;
+}
+
+.main-service-area .service-sidebar .discount-text .theme-button .default-btn {
+  background: #ffffff;
+  color: #031888;
+}
+
+.main-service-area .service-sidebar .discount-text .theme-button .default-btn:hover {
+  color: #ffffff;
+}
+
+.main-service-area .service-sidebar .discount-text .discount-shapes img {
+  position: absolute;
+}
+
+.main-service-area .service-sidebar .discount-text .discount-shapes :nth-child(1) {
+  top: 20px;
+  left: 100px;
+}
+
+.main-service-area .service-sidebar .discount-text .discount-shapes :nth-child(2) {
+  top: 0;
+  right: 30px;
+}
+
+.main-service-area .service-sidebar .discount-text .discount-shapes :nth-child(3) {
+  top: 100px;
+  left: 10px;
+}
+
+.main-service-area .service-sidebar .discount-text .discount-shapes :nth-child(4) {
+  top: 150px;
+  right: 10px;
+}
+
+.main-service-area .service-sidebar .discount-text .discount-shapes :nth-child(5) {
+  top: 250px;
+  left: 10px;
+  z-index: -1;
+}
+
+.main-service-area .service-sidebar .discount-text .discount-shapes :nth-child(6) {
+  bottom: 100px;
+  right: 10px;
+}
+
+.main-service-area .service-sidebar .discount-text .discount-shapes :nth-child(7) {
+  bottom: 10px;
+  right: 50px;
+}
+
+.main-service-area .service-sidebar .discount-text .discount-shapes :nth-child(8) {
+  bottom: 10px;
+  left: 50px;
+}
+
+/* Service  CSS End */
+/*-------------- SERVICE PAGE CSS END --------------*/

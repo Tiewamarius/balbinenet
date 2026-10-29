@@ -1,11 +1,12 @@
 
 
 import { Link } from "react-router-dom";
+import { FaCircleUser } from "react-icons/fa6";
 
 // Navbar Section Start
 export default function Navbar() {
   return (
-    <div className="navbar-area">
+    <div className="navbar-area sticky-top">
       {/* Menu For Mobile Device */}
       <div className="mobile-nav">
         <Link to="/" className="logo">
@@ -48,7 +49,7 @@ export default function Navbar() {
                 <li className="nav-item">
                   <Link to="/" className="nav-link">
                     Accueil
-                    <i className="icofont-rounded-right" />
+                    {/* <i className="icofont-rounded-right" /> */}
                   </Link>
                 </li>
 
@@ -81,12 +82,7 @@ export default function Navbar() {
                   </Link>
                 </li>
 
-                {/* Espace client */}
-                <li className="nav-item">
-                  <Link to="/login" className="nav-link">
-                    Connexion
-                  </Link>
-                </li>
+                
 
                 {/* Contact */}
                 <li className="nav-item">
@@ -97,8 +93,12 @@ export default function Navbar() {
               </ul>
 
               <div className="navbar-button">
-                <Link to="/contact">Demander un devis</Link>
+                <Link to="/contact">Demander devis</Link>
               </div>
+
+              <Link to="/compte" className="navbar-buttons" aria-label="Mon compte">
+                <FaCircleUser />
+            </Link>
             </div>
           </nav>
         </div>

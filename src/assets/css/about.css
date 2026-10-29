@@ -1,0 +1,132 @@
+/*------------- ABOUT PAGE CSS START ----------------*/
+/* About Title CSS Start */
+.about-title-bg {
+  background-image: url(../img/title-bg/1.png);
+  background-position: center center;
+  background-size: cover;
+  height: 350px;
+  position: relative;
+  z-index: 0;
+}
+
+.about-title-bg::before {
+  position: absolute;
+  content: '';
+  background: rgba(3, 24, 136, 0.35);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.about-title .about-title-text {
+  text-align: center;
+}
+
+.about-title .about-title-text h2 {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.about-title .about-title-text ul {
+  padding-left: 0;
+}
+
+.about-title .about-title-text ul li {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.about-title .about-title-text ul li a {
+  color: #ffffff;
+}
+
+.about-title .about-title-text ul li a:hover {
+  color: #2196f3;
+}
+
+.about-title .about-title-text ul li i {
+  color: #031888;
+}
+
+/* About Title CSS End */
+/* About Post CSS Start */
+.about-style-three {
+  padding-bottom: 100px;
+}
+
+.about-style-three .about-img {
+  position: relative;
+  z-index: 0;
+}
+
+.about-style-three .about-img::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/about-shape.png);
+  background-position: center center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  top: -35px;
+  right: -30px;
+  z-index: -1;
+}
+
+.about-style-three .about-text {
+  padding-left: 55px;
+}
+
+.about-style-three .about-text .section-head {
+  margin: 0 auto 30px 0;
+}
+
+.about-style-three .about-text .section-head h2 {
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.about-style-three .about-text ul {
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.about-style-three .about-text ul li {
+  width: 220px;
+  margin-bottom: 15px;
+}
+
+/* About Post CSS End */
+/* Process CSS Start */
+.about-process {
+  padding-top: 0;
+}
+
+.about-process .section-head h2 span {
+  font-size: 35px;
+  font-weight: 600;
+  color: #2196f3;
+}
+
+/* Process CSS End */
+/* Team CSS Start */
+.team-style-three::before {
+  display: none;
+}
+
+.team-style-three .section-head h2 span {
+  font-size: 35px;
+  font-weight: 600;
+  color: #2196f3;
+}
+
+.team-style-three .team-card .team-img .team-social a {
+  width: 100%;
+}
+
+/* Team CSS End */
+/*-------------- ABOUT PAGE CSS END ------------*/

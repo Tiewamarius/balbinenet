@@ -1,0 +1,57 @@
+/*-------------- TESTIMONIAL PAGE CSS START -------------*/
+/* Service Title CSS Start */
+.testimonial-title-bg {
+  background-image: url(../img/title-bg/6.png);
+  background-position: center center;
+  background-size: cover;
+  height: 350px;
+  position: relative;
+  z-index: 0;
+}
+
+.testimonial-title-bg::before {
+  position: absolute;
+  content: '';
+  background: rgba(3, 24, 136, 0.35);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.testimonial-title .testimonial-title-text {
+  text-align: center;
+}
+
+.testimonial-title .testimonial-title-text h2 {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.testimonial-title .testimonial-title-text ul {
+  padding-left: 0;
+}
+
+.testimonial-title .testimonial-title-text ul li {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.testimonial-title .testimonial-title-text ul li a {
+  color: #ffffff;
+}
+
+.testimonial-title .testimonial-title-text ul li a:hover {
+  color: #031888;
+}
+
+.testimonial-title .testimonial-title-text ul li i {
+  color: #031888;
+}
+
+/* Service Title CSS End */
+/*---------------- TESTIMONIAL PAGE CSS END ------------*/

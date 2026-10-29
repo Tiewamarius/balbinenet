@@ -1,80 +1,229 @@
-import { Link } from 'react-router-dom';
+
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
-import {
-    FaFacebookF,
-    FaInstagram,
-    FaTiktok,
-    FaYoutube,
-    FaWhatsapp,
-} from "react-icons/fa6";
-
-import "../css/Footer.css";
-
-const QUICK_LINKS = [
-    { key: "nav.booking", href: "/reservation" },
-    { key: "nav.rooms", href: "/rooms" },
-    { key: "nav.dining", href: "/restauration" },
-];
-
-const SOCIALS = [
-    { label: "WhatsApp", href: "https://wa.me/2250500326868", Icon: FaWhatsapp },
-    { label: "TikTok", href: "https://www.tiktok.com/@residencenehemie2", Icon: FaTiktok },
-    { label: "Instagram", href: "https://www.instagram.com/residencenehemie", Icon: FaInstagram },
-    {
-        label: "Facebook",
-        href: "https://www.facebook.com/share/1BkydohdQK/?mibextid=wwXIfr",
-        Icon: FaFacebookF,
-    },
-    { label: "YouTube", href: "#", Icon: FaYoutube },
-];
 
 export default function Footer() {
     const { t } = useTranslation();
 
+    const services = [
+        { label: t("footer.services.lowCost", "Low Cost"), path: "/services" },
+        { label: t("footer.services.fast", "Fastest Service"), path: "/services" },
+        { label: t("footer.services.professional", "Professional Cleaning"), path: "/services" },
+        { label: t("footer.services.home", "Home Cleaning"), path: "/services" },
+        { label: t("footer.services.office", "Office Cleaning"), path: "/services" },
+    ];
+
+    const quickLinks = [
+        { label: t("footer.links.home", "Accueil"), path: "/" },
+        { label: t("footer.links.about", "À propos"), path: "/about" },
+        { label: t("footer.links.services", "Services"), path: "/services" },
+        { label: t("footer.links.formulas", "Nos formules"), path: "/formules" },
+        { label: t("footer.links.contact", "Contact"), path: "/contact" },
+    ];
+
     return (
-        <footer className="knsl-footer">
-            <div className="knsl-footer__inner">
-                {/* Partie supérieure */}
-                <div className="knsl-footer__top">
-                    {/* Identité */}
-                    <div className="knsl-footer__brand">
-                        <Link to="/" aria-label={t("footer.homeAria")}>
-                            <img src="/img/logoRNwhite.png" alt="Résidence Néhémie" />
-                        </Link>
+        <footer className="footer-area">
+            <div className="container">
+                <div className="row">
+                    {/* Présentation et newsletter */}
+                    <div className="col-lg-3 col-md-6">
+                        <div className="footer-widget">
+                            <div className="logo">
+                                <Link to="/" aria-label="Balbine.net - Accueil">
+                                    <img
+                                        src="/assets/img/logo.png"
+                                        alt="Balbine.net"
+                                    />
+                                </Link>
+                            </div>
 
-                        <p>{t("footer.tagline")}</p>
+                            <p>
+                                {t(
+                                    "footer.description",
+                                    "Balbine.net vous accompagne avec des services de nettoyage adaptés à vos besoins."
+                                )}
+                            </p>
 
-                        {/* Réseaux sociaux */}
-                        <ul className="knsl-footer__socials">
-                            {SOCIALS.map(({ label, href, Icon }) => (
-                                <li key={label}>
-                                    <a
-                                        href={href}
-                                        aria-label={label}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                            <div className="email">
+                                <form
+                                    className="newsletter-form"
+                                    onSubmit={(event) => event.preventDefault()}
+                                >
+                                    <input
+                                        type="email"
+                                        className="form-control"
+                                        placeholder={t(
+                                            "footer.emailPlaceholder",
+                                            "Votre adresse e-mail"
+                                        )}
+                                        name="EMAIL"
+                                        autoComplete="email"
+                                        aria-label={t(
+                                            "footer.emailPlaceholder",
+                                            "Votre adresse e-mail"
+                                        )}
+                                        required
+                                    />
+
+                                    <button
+                                        className="default-btn electronics-btn"
+                                        type="submit"
+                                        aria-label={t(
+                                            "footer.subscribe",
+                                            "S'inscrire à la newsletter"
+                                        )}
                                     >
-                                        <Icon />
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
+                                        <i className="icofont-location-arrow"></i>
+                                    </button>
+
+                                    <div
+                                        className="form-result"
+                                        aria-live="polite"
+                                    ></div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
 
-                    {/* Navigation rapide */}
-                    <nav className="knsl-footer__cols" aria-label={t("footer.navAria")}>
-                        {QUICK_LINKS.map((link) => (
-                            <Link key={link.href} to={link.href}>
-                                {t(link.key)}
-                            </Link>
-                        ))}
-                    </nav>
-                </div>
+                    {/* Services */}
+                    <div className="col-lg-3 col-md-6">
+                        <div className="footer-widget pl-40">
+                            <h3>{t("footer.servicesTitle", "Services")}</h3>
 
-                {/* Copyright */}
-                <div className="knsl-footer__bottom">
-                    <p>{t("footer.copyright", { year: new Date().getFullYear() })}</p>
+                            <ul>
+                                {services.map((service) => (
+                                    <li key={service.label}>
+                                        <i className="icofont-simple-right"></i>
+                                        <Link to={service.path}>
+                                            {service.label}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Liens rapides */}
+                    <div className="col-lg-3 col-md-6">
+                        <div className="footer-widget pl-40">
+                            <h3>{t("footer.quickLinksTitle", "Liens rapides")}</h3>
+
+                            <ul>
+                                {quickLinks.map((link) => (
+                                    <li key={link.path}>
+                                        <i className="icofont-simple-right"></i>
+                                        <Link to={link.path}>
+                                            {link.label}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Coordonnées */}
+                    <div className="col-lg-3 col-md-6">
+                        <div className="footer-widget">
+                            <h3>{t("footer.findUsTitle", "Nous contacter")}</h3>
+
+                            <p className="find-text">
+                                {t(
+                                    "footer.findUsDescription",
+                                    "Contactez notre équipe pour toute demande d'information."
+                                )}
+                            </p>
+
+                            <ul className="find-us">
+                                <li>
+                                    <i className="icofont-location-pin"></i>
+                                    <span>
+                                        {t(
+                                            "footer.address",
+                                            "Adresse à renseigner"
+                                        )}
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <i className="icofont-phone"></i>
+                                    <a href="tel:+2250000000000">
+                                        {t(
+                                            "footer.phone",
+                                            "Numéro à renseigner"
+                                        )}
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <i className="icofont-ui-message"></i>
+                                    <a href="mailto:contact@balbine.net">
+                                        {t(
+                                            "footer.email",
+                                            "contact@balbine.net"
+                                        )}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Pied de page inférieur */}
+            <div className="bottom-footer">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6">
+                            <div className="footer-social">
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://www.facebook.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Facebook"
+                                        >
+                                            <i className="icofont-facebook"></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="https://www.linkedin.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="LinkedIn"
+                                        >
+                                            <i className="icofont-linkedin"></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href="https://www.instagram.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Instagram"
+                                        >
+                                            <i className="icofont-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6">
+                            <div className="copyright-text text-end">
+                                <p>
+                                    © {new Date().getFullYear()}{" "}
+                                    {t(
+                                        "footer.copyright",
+                                        "Balbine.net. Tous droits réservés."
+                                    )}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>

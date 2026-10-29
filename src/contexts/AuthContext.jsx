@@ -1,56 +1,70 @@
-import {
-  createContext,
-  useContext,
-  useState,
-} from "react";
 
+import { createContext, useContext, useState } from "react";
 import { loginRequest } from "../services/api/authApi";
 
 const AuthContext = createContext(null);
 
+function readSession() {
+  try {
+    const saved = sessionStorage.getItem("balbinenet_session");
+    return saved ? JSON.parse(saved) : null;
+  } catch {
+    return null;
+  }
+}
+
 export function AuthProvider({ children }) {
-  const [user, setUser] = useState(null);
-  const [token, setToken] = useState(null);
+  const [session, setSession] = useState(readSession);
 
   async function login(credentials) {
     const response = await loginRequest(credentials);
 
-    const accessToken =
+    const token =
       response.access_token ??
       response.token ??
       response.data?.access_token ??
       response.data?.token;
 
-    const authenticatedUser =
-      response.user ?? response.data?.user ?? null;
+    const user =
+      response.user ??
+      response.client ??
+      response.data?.user ??
+      response.data?.client ??
+      null;
 
-    if (!accessToken) {
+    if (!token) {
       throw new Error(
-        "La réponse de l'API ne contient aucun token reconnu."
+        "Connexion reçue, mais aucun token reconnu dans la réponse de l’API."
       );
     }
 
-    setToken(accessToken);
-    setUser(authenticatedUser);
+    const newSession = { token, user };
 
-    return authenticatedUser;
+    sessionStorage.setItem(
+      "balbinenet_session",
+      JSON.stringify(newSession)
+    );
+
+    setSession(newSession);
+
+    return user;
   }
 
   function logout() {
-    setUser(null);
-    setToken(null);
+    sessionStorage.removeItem("balbinenet_session");
+    setSession(null);
   }
 
-  const value = {
-    user,
-    token,
-    isAuthenticated: Boolean(token),
-    login,
-    logout,
-  };
-
   return (
-    <AuthContext.Provider value={value}>
+    <AuthContext.Provider
+      value={{
+        user: session?.user ?? null,
+        token: session?.token ?? null,
+        isAuthenticated: Boolean(session?.token),
+        login,
+        logout,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );
@@ -61,7 +75,7 @@ export function useAuth() {
 
   if (!context) {
     throw new Error(
-      "useAuth doit être utilisé à l'intérieur de AuthProvider."
+      "useAuth doit être utilisé à l’intérieur de AuthProvider."
     );
   }
 

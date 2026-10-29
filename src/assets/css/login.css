@@ -1,0 +1,1241 @@
+
+:root {
+    --balbine-primary: #2196f3;
+    --balbine-primary-dark: #1976d2;
+    --balbine-secondary: #00bcd4;
+
+    --balbine-light: #e1f5fe;
+    --balbine-bg: #f5f9fc;
+
+    --balbine-text: #172525;
+    --balbine-muted: #6b7777;
+
+    --balbine-border: #dfe7e6;
+
+    --white: #ffffff;
+
+    --danger: #dc2626;
+    --success: #15803d;
+
+    --radius: 24px;
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family:
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    color: var(--balbine-text);
+
+    background: var(--balbine-bg);
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.balbine-auth-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 25px;
+
+    background:
+
+        radial-gradient(
+            circle at 5% 10%,
+            rgba(0, 188, 212, .10),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 95% 90%,
+            rgba(33, 150, 243, .10),
+            transparent 30%
+        ),
+
+        #f5f9fc;
+}
+
+
+.auth-container {
+
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: auto;
+}
+
+
+.auth-row {
+
+    min-height: 720px;
+
+    overflow: hidden;
+
+    background: var(--white);
+ 
+
+    box-shadow:
+
+        0 30px 80px rgba(15, 23, 42, .10),
+
+        0 10px 30px rgba(15, 23, 42, .05);
+}
+
+
+/* =========================================================
+   LEFT
+========================================================= */
+
+.auth-form-column {
+
+    background: white;
+}
+
+
+.auth-form-wrapper {
+
+    min-height: 720px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 55px 75px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.balbine-logo {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 42px;
+}
+
+
+.balbine-logo-mark {
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    color: white;
+
+    font-size: 20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--balbine-primary),
+            var(--balbine-secondary)
+        );
+
+    box-shadow:
+
+        0 8px 20px rgba(33, 150, 243, .22);
+}
+
+
+.balbine-logo-text {
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 2px;
+}
+
+
+.balbine-logo-text strong {
+
+    font-size: 25px;
+
+    letter-spacing: -1px;
+
+    font-weight: 800;
+}
+
+
+.balbine-logo-text span {
+
+    color: var(--balbine-primary);
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: .5px;
+}
+
+
+/* =========================================================
+   AUTH BOX
+========================================================= */
+
+.auth-box {
+
+    width: 100%;
+
+    max-width: 480px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.auth-heading {
+
+    margin-bottom: 30px;
+}
+
+
+.auth-eyebrow {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--balbine-primary);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+
+.auth-heading h1 {
+
+    margin: 0 0 8px;
+
+    color: var(--balbine-text);
+
+    font-size: 35px;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+
+.auth-heading p {
+
+    margin: 0;
+
+    color: var(--balbine-muted);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+.auth-heading-register {
+
+    display: none;
+}
+
+
+/* =========================================================
+   FORMS
+========================================================= */
+
+.auth-form {
+
+    display: block;
+}
+
+
+.register-form {
+
+    display: none;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.input-group-balbine {
+
+    margin-bottom: 19px;
+}
+
+
+.input-group-balbine label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #344343;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.input-label-row {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+
+.input-label-row label {
+    margin-bottom: 7px;
+}
+
+
+.forgot-password {
+
+    margin-bottom: 7px;
+
+    color: var(--balbine-primary);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.forgot-password:hover {
+
+    color: var(--balbine-primary-dark);
+
+    text-decoration: underline;
+}
+
+
+.input-container {
+
+    position: relative;
+}
+
+
+.input-container > i {
+
+    position: absolute;
+
+    left: 16px;
+
+    top: 50%;
+
+    z-index: 2;
+
+    transform: translateY(-50%);
+
+    color: #9aa8a7;
+
+    font-size: 14px;
+
+    pointer-events: none;
+}
+
+
+.input-container input {
+
+    width: 100%;
+
+    height: 51px;
+
+    padding: 0 46px;
+
+    border: 1px solid var(--balbine-border);
+
+    border-radius: 11px;
+
+    outline: none;
+
+    background: #fbfcfc;
+
+    color: var(--balbine-text);
+
+    font-size: 13px;
+
+    transition: all .2s ease;
+}
+
+
+.input-container input::placeholder {
+
+    color: #a5afae;
+}
+
+
+.input-container input:hover {
+
+    border-color: #c7d5d3;
+}
+
+
+.input-container input:focus {
+
+    border-color: #2196f3;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 4px rgba(33, 150, 243, .10);
+}
+
+
+.input-container input.input-invalid {
+
+    border-color: var(--danger);
+}
+
+
+/* =========================================================
+   PASSWORD TOGGLE
+========================================================= */
+
+.password-toggle {
+
+    position: absolute;
+
+    right: 10px;
+
+    top: 50%;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(-50%);
+
+    border: 0;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #8d9998;
+
+    cursor: pointer;
+}
+
+
+.password-toggle:hover {
+
+    color: var(--balbine-primary);
+
+    background: var(--balbine-light);
+}
+
+
+/* =========================================================
+   FIELD ERROR
+========================================================= */
+
+.field-error {
+
+    display: none;
+
+    margin-top: 5px;
+
+    color: var(--danger);
+
+    font-size: 11px;
+}
+
+
+.field-error.show {
+
+    display: block;
+}
+
+
+/* =========================================================
+   REMEMBER
+========================================================= */
+
+.remember-row {
+
+    margin: 2px 0 22px;
+}
+
+
+.remember-row label,
+.terms-row label {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    color: var(--balbine-muted);
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    cursor: pointer;
+}
+
+
+.remember-row input,
+.terms-row input {
+
+    width: 15px;
+    height: 15px;
+
+    margin-top: 1px;
+
+    flex-shrink: 0;
+
+    accent-color: var(--balbine-primary);
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   TERMS
+========================================================= */
+
+.terms-row {
+
+    margin: 4px 0 21px;
+}
+
+
+.terms-row a {
+
+    color: var(--balbine-primary);
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+.forgot-password,
+.auth-switch button,
+.terms-row a {
+
+    color: #2196f3;
+}
+
+.forgot-password:hover,
+.auth-switch button:hover {
+
+    color: #1976d2;
+}
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+.auth-submit {
+
+    position: relative;
+
+    width: 100%;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    border-radius: 11px;
+
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #00bcd4,
+        #2196f3
+    );
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 22px rgba(33, 150, 243, .20);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        opacity .2s ease;
+}
+
+
+.auth-submit:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 30px rgba(33, 150, 243, .30);
+}
+
+
+.auth-submit:disabled {
+
+    opacity: .65;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+.button-text {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.button-loader {
+
+    display: none;
+}
+
+
+.auth-submit.loading .button-text {
+
+    display: none;
+}
+
+
+.auth-submit.loading .button-loader {
+
+    display: block;
+}
+
+
+/* =========================================================
+   ALERT
+========================================================= */
+
+.auth-alert {
+
+    display: none;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    padding: 12px 14px;
+
+    border-radius: 10px;
+
+    color: #991b1b;
+
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+.auth-alert.show {
+
+    display: flex;
+}
+
+
+.auth-alert.success {
+
+    color: #166534;
+
+    background: #f0fdf4;
+
+    border-color: #bbf7d0;
+}
+
+
+/* =========================================================
+   SWITCH
+========================================================= */
+
+.auth-switch {
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: var(--balbine-muted);
+
+    font-size: 12px;
+}
+
+
+.auth-switch button {
+
+    margin-left: 4px;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+
+    color: var(--balbine-primary);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.auth-switch button:hover {
+
+    text-decoration: underline;
+}
+
+
+.switch-register {
+
+    display: none;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.auth-footer {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 35px;
+
+    color: #9aa5a4;
+
+    font-size: 10px;
+
+    text-align: center;
+}
+
+
+.footer-separator {
+    opacity: .5;
+}
+
+
+/* =========================================================
+   RIGHT VISUAL
+========================================================= */
+
+.auth-visual-column {
+
+    min-height: 720px;
+}
+
+
+.auth-visual {
+
+    position: relative;
+
+    min-height: 720px;
+    height: 100%;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px;
+
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #00bcd4 0%,
+        #2196f3 100%
+    );
+}
+
+
+/* =========================================================
+   DECORATIONS
+========================================================= */
+
+.visual-circle {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .10);
+
+    border: 1px solid rgba(255, 255, 255, .06);
+}
+
+.visual-circle-one {
+
+    width: 500px;
+    height: 500px;
+
+    top: -260px;
+    right: -200px;
+}
+
+
+.visual-circle-two {
+
+    width: 420px;
+    height: 420px;
+
+    bottom: -250px;
+    left: -200px;
+}
+
+
+.visual-dots {
+
+    position: absolute;
+
+    right: 50px;
+    bottom: 50px;
+
+    width: 100px;
+    height: 100px;
+
+    opacity: .30;
+
+    background-image:
+
+        radial-gradient(
+            rgba(255,255,255,.9) 1.5px,
+            transparent 1.5px
+        );
+
+    background-size: 12px 12px;
+}
+
+
+/* =========================================================
+   VISUAL CONTENT
+========================================================= */
+
+.visual-content {
+
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 500px;
+}
+
+
+.visual-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 27px;
+
+    padding: 8px 12px;
+
+    border: 1px solid rgba(255,255,255,.22);
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,.12);
+
+    backdrop-filter: blur(10px);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+}
+
+
+.visual-content h2 {
+
+    margin: 0 0 23px;
+
+    font-size: 42px;
+
+    line-height: 1.12;
+
+    font-weight: 800;
+
+    letter-spacing: -1.5px;
+}
+
+
+.visual-content h2 span {
+    color: #99f6ff;
+}
+
+
+.visual-content > p {
+
+    max-width: 440px;
+
+    margin: 0 0 40px;
+
+    color: rgba(255,255,255,.76);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.service-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.service-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.service-icon {
+
+    width: 43px;
+    height: 43px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,.18);
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,.12);
+
+    backdrop-filter: blur(8px);
+
+    font-size: 15px;
+}
+
+
+.service-item strong {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-size: 13px;
+}
+
+
+.service-item span {
+
+    display: block;
+
+    color: rgba(255,255,255,.58);
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   VISUAL BOTTOM
+========================================================= */
+
+.visual-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 50px;
+
+    color: rgba(255,255,255,.55);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+.visual-line {
+
+    width: 35px;
+
+    height: 1px;
+
+    background: rgba(255,255,255,.35);
+}
+
+
+/* =========================================================
+   REGISTER MODE
+========================================================= */
+
+.auth-form-wrapper.register-mode
+.auth-heading-login {
+
+    display: none;
+}
+
+
+.auth-form-wrapper.register-mode
+.auth-heading-register {
+
+    display: block;
+}
+
+
+.auth-form-wrapper.register-mode
+.login-form {
+
+    display: none;
+}
+
+
+.auth-form-wrapper.register-mode
+.register-form {
+
+    display: block;
+}
+
+
+.auth-form-wrapper.register-mode
+.switch-login {
+
+    display: none;
+}
+
+
+.auth-form-wrapper.register-mode
+.switch-register {
+
+    display: block;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .auth-form-wrapper {
+
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .auth-visual {
+
+        padding: 50px;
+    }
+
+    .visual-content h2 {
+
+        font-size: 36px;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+    .auth-visual-column{
+        display:none;
+    }
+
+    .balbine-auth-page {
+
+        min-height: 100vh;
+
+        padding: 20px 15px;
+    }
+
+    .auth-row {
+
+        min-height: auto;
+    }
+
+    .auth-form-wrapper {
+
+        min-height: auto;
+
+        padding: 45px 30px;
+    }
+
+    .auth-box {
+
+        max-width: 520px;
+    }
+
+}
+
+
+@media (max-width: 575px) {
+    
+    .auth-visual-column{
+        display:none;
+    }
+
+    .balbine-auth-page {
+
+        padding: 0;
+    }
+
+    .auth-row {
+
+        border-radius: 0;
+
+        box-shadow: none;
+    }
+
+    .auth-form-wrapper {
+
+        padding: 30px 20px;
+    }
+
+    .balbine-logo {
+
+        margin-bottom: 32px;
+    }
+
+    .auth-heading h1 {
+
+        font-size: 29px;
+    }
+
+    .auth-heading p {
+
+        font-size: 13px;
+    }
+
+    .auth-footer {
+
+        flex-direction: column;
+
+        gap: 3px;
+
+        margin-top: 25px;
+    }
+
+    .footer-separator {
+
+        display: none;
+    }
+
+}
+
+
+@media (max-height: 750px) and (min-width: 992px) {
+
+    .auth-row,
+    .auth-form-wrapper,
+    .auth-visual-column,
+    .auth-visual {
+
+        min-height: 680px;
+    }
+
+    .auth-form-wrapper {
+
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+}

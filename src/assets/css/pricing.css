@@ -1,0 +1,59 @@
+/*--------------- PRICEING PAGE CSS START --------------*/
+.pricing-title {
+  height: 300px;
+  background: #2196f3;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.pricing-title::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  opacity: .77;
+}
+
+.pricing-title.bg-1 {
+  background-image: url(../img/title-bg/11.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pricing-title h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  
+}
+
+.pricing-title ul {
+  padding-left: 0;
+}
+
+.pricing-title ul li {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.pricing-title ul li a {
+  color: #ffffff;
+}
+
+.pricing-title ul li a:hover {
+  color: #ffffff;
+}
+
+.pricing-title ul li i {
+  color: #ffffff;
+}
+
+/*------------- PRICEING PAGE CSS END ------------------*/
