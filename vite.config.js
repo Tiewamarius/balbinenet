@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api-proxy": {
-        target: "https://balbine.net",
+        target: "https://balbine-crm.poc-demo.com/v1",
         changeOrigin: true,
         secure: true,
         rewrite: (path) => path.replace(/^\/api-proxy/, ""),
